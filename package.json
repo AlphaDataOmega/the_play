@@ -1,1 +1,18 @@
-{"name":"the_play","version":"0.2.0","private":true,"type":"module","description":"Natural Intelligence: an executable play in seven acts","engines":{"node":">=20"},"license":"PolyForm-Noncommercial-1.0.0","scripts":{"play":"node examples/performance.js","start":"node examples/serve.js","test":"node --test","check":"node --check src/the-song.js && node --check examples/performance.js && node --check examples/serve.js"}}
+{
+  "name": "the-play",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "scripts": {
+    "test": "node --test",
+    "play": "node examples/weave.js",
+    "start": "node examples/serve.js",
+    "check": "node --check src/the-weaver.js && node --check src/living-script.js && node --check stage.js",
+    "test:weaver": "node --test test/weaver.test.js",
+    "play:previous": "node examples/performance.js"
+  }
+}

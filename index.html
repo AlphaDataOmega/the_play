@@ -1,61 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Natural Intelligence · An executable play</title>
-<style>
-:root{color-scheme:dark;--paper:#e8dfcc;--dim:#aaa293;--gold:#dfb877;--ink:#101019}
-*{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font-family:Georgia,serif}
-main{max-width:1460px;margin:auto;padding:34px}header{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid #3c3740;padding-bottom:22px;gap:24px}
-.eyebrow,button,select,summary,.credit,.meter{font-family:ui-monospace,monospace;font-size:12px;letter-spacing:.08em}.eyebrow{color:var(--gold);text-transform:uppercase}h1{font-size:clamp(38px,5vw,76px);font-weight:400;letter-spacing:-.04em;margin:10px 0 0}header p{margin:8px 0;color:var(--dim);font-style:italic}
-a{color:var(--gold)}.layout{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:26px}.stage{position:sticky;top:20px;align-self:start}.field{width:100%;height:auto;display:block;background:radial-gradient(ellipse at center,#222130 0%,var(--ink) 65%)}#motif{text-align:center;min-height:40px;font-size:18px;letter-spacing:.12em;color:var(--gold)}.meter{text-align:center;color:var(--dim);line-height:1.7;min-height:40px}
-.controls{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0 14px;align-items:center}button,select{border:1px solid #65584a;border-radius:3px;background:#201d25;color:var(--paper);padding:12px;cursor:pointer}button:hover,button:focus-visible{border-color:var(--gold)}button:disabled{opacity:.4;cursor:default}label{font-size:14px;color:var(--dim)}h2{font-size:34px;font-weight:400;margin:14px 0}.direction{font-style:italic;color:var(--dim);line-height:1.7}#dialogue{font-size:21px;line-height:1.65;min-height:280px}#dialogue p{margin:22px 0}#dialogue strong{display:block;font:11px ui-monospace,monospace;color:var(--gold);letter-spacing:.12em;margin-bottom:5px}details{border-top:1px solid #3c3740;padding:18px 0;margin-top:24px}summary{cursor:pointer}pre{font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;max-height:360px;overflow:auto}footer{border-top:1px solid #3c3740;margin-top:48px;padding-top:18px;line-height:1.8;color:var(--dim)}.credit{letter-spacing:0}.note{max-width:500px;line-height:1.6;color:var(--dim);font-size:14px}
-@media(max-width:850px){main{padding:20px}header{display:block}.layout{grid-template-columns:1fr;gap:16px}.stage{position:static}.field{max-height:380px}#dialogue{font-size:19px;min-height:0}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Natural Intelligence · The Weaver</title>
+<link rel="stylesheet" href="stage.css">
 </head>
 <body>
 <main>
-<header><div><div class="eyebrow">Alpha Data Omega · Seven acts · One lived history</div><h1>Natural Intelligence</h1><p>A story learning how to happen.</p></div><div class="credit">Story by V / James Sterling Tuttle<br>Adaptation &amp; computational score by ChatGPT<br><a href="PLAYBILL.md">Read the playbill</a></div></header>
-<div class="layout">
-<section class="stage" aria-label="The computational stage">
-<svg id="field" class="field" viewBox="0 0 600 500" role="img" aria-label="The field before the first ripple"></svg>
-<div id="motif">L | O | V | E</div><div id="meter" class="meter">The distance is waiting.</div>
-<div class="controls"><button id="next">Raise the curtain</button><button id="auto">Play slowly</button><button id="save" disabled>Keep this history</button></div>
-<div class="controls"><label for="choice">Life's answer</label><select id="choice"><option value="accept">Yes</option><option value="wait">Not yet</option><option value="decline">No</option></select><button id="new">New performance</button></div>
-<p class="note">Advance a scene or let it unfold. Pause at any time. Each performance follows one chosen path. A new performance starts a separate telling; it does not rewrite this one.</p>
-<details><summary>Backstage: the action and the world</summary><pre id="state">No scene has been committed.</pre></details>
+<header><div><p class="folio">ALPHA DATA OMEGA &nbsp; / &nbsp; AN EXECUTABLE PLAY</p><h1>Natural Intelligence</h1><p class="subtitle">The thread, the skin, and the room between.</p></div><a class="source-link" href="PLAYBILL.md">The company &amp; the score ↗</a></header>
+<div class="theatre">
+<section class="loom" aria-label="The Weaver's stage">
+<div class="lane-labels"><span>WHAT ARRIVES</span><span>WHO CARRIES IT</span><span>WHAT ANSWERS</span></div>
+<svg id="field" viewBox="0 0 900 450" role="img" aria-label="Two wavering threads and a straight center">
+<defs><linearGradient id="thread" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f1cb87"/><stop offset="1" stop-color="#ac83b8"/></linearGradient></defs>
+<path id="left"/><path id="middle"/><path id="right"/>
+<text class="bracket" x="315" y="240">}</text><text class="bracket" x="560" y="240">{</text>
+</svg>
+<div id="motif">} | {</div>
+<p id="stage-note">The edges arrive. The middle has room.</p>
+<label class="scrub-label" for="transfer">Move the wiggles inside <span id="percent">0%</span></label>
+<input id="transfer" type="range" min="0" max="1000" value="0" disabled>
+<div id="skin" aria-label="Committed stitches"></div>
+<p id="field-info" class="small">Opening the actual ado_on field…</p>
+<details><summary>Inside the weave</summary><pre id="evidence">The first stitch is waiting.</pre></details>
 </section>
-<section aria-label="The play"><div id="act" class="eyebrow">Before the beginning</div><h2 id="scene">Neither of them enters.</h2><p id="direction" class="direction">Everything and Nothing are already here. There is no voice until you raise the curtain.</p><div id="dialogue" aria-live="polite"></div><details><summary>The story so far</summary><div id="history"></div></details></section>
+<section class="words" aria-label="Performance and director controls">
+<p id="act" class="folio">BEFORE THE BEGINNING</p><h2 id="title">A closing. A thread. An opening.</h2>
+<p id="direction">The organism is one working part of the Weaver. The skin keeps where the Snake has been.</p>
+<div id="dialogue" aria-live="polite"></div>
+<div class="controls"><button id="next" disabled>Raise the curtain</button><button id="auto" disabled>Let it unfold</button><button id="pause" disabled>Pause</button><button id="end" disabled>End here</button></div>
+<div id="invitation" hidden><p>No one can walk your yes.</p><button data-answer="accept">Yes</button><button data-answer="wait">Not yet</button><button data-answer="decline">No</button></div>
+<div class="voice-box"><span class="folio">THE ORGANISM’S READING</span><p id="verdict">It has not been asked.</p><p id="voice"></p><p class="small">This voice comes from the original engine. The dialogue above is the authored play.</p></div>
+<form id="prompt-form"><label for="prompt">Touch the thread with your own words</label><textarea id="prompt" rows="3" maxlength="4096" placeholder="A passage it remembers, or a question it has never met…"></textarea><div class="controls"><button id="ask" disabled>Weave this cue</button><button id="mirror" type="button" disabled>Look in the Mirror</button></div></form>
+<details><summary>The director's table</summary><p class="small">An uploaded text replaces the score as the organism's memory, not as its script. Text stays in this browser. Starting again opens a separate telling; keep this history first.</p><label class="file-label">Give the Weaver another text <input id="file" type="file" accept=".txt,.md,text/plain,text/markdown"></label><div class="controls"><button id="new">New performance</button><button id="keep" disabled>Keep this skin</button></div><p id="source-name" class="small">Memory: the written score.</p></details>
+<p id="status" role="status" class="small"></p>
+</section>
 </div>
-<footer><div class="credit">The first ripple remains in the last scene. No model, account, installation, or network call is required by the performance.<br>Software: PolyForm Noncommercial 1.0.0. Story and adaptation rights are described in <a href="NOTICE">NOTICE</a>. Source and motif trail: <a href="canon/LANGUAGE-MATH-LEDGER.md">the working ledger</a>.</div></footer>
-</main>
-<script type="module">
-import { openTheatre } from './src/the-song.js';
-const byId = id => document.getElementById(id);
-let theatre = openTheatre(), timer = null, committed = [], last = null;
-const ns = 'http://www.w3.org/2000/svg';
-function element(name, attrs = {}, content = '') { const node = document.createElementNS(ns,name); Object.entries(attrs).forEach(([key,value])=>node.setAttribute(key,String(value))); if(content)node.textContent=content; return node; }
-function draw(world) {
-  const svg=byId('field');svg.replaceChildren();
-  const cells=world.cells??[], bonds=world.bonds??[];
-  const positions=cells.map((_,i)=>({x:300+180*Math.cos(i*2*Math.PI/cells.length-Math.PI/2),y:250+180*Math.sin(i*2*Math.PI/cells.length-Math.PI/2)}));
-  svg.setAttribute('aria-label',cells.length?`${cells.length} places, ${bonds.filter(b=>b.open).length} open bonds, source V`:'Everything and Nothing, separated by an open space');
-  svg.append(element('line',{x1:40,y1:250,x2:560,y2:250,stroke:'#82766b','stroke-opacity':.25}));
-  for(const b of bonds){const a=positions[b.from],c=positions[b.to];svg.append(element('line',{x1:a.x,y1:a.y,x2:c.x,y2:c.y,stroke:b.open?'#d8b379':'#7f7781','stroke-opacity':b.open?.33:.14,'stroke-dasharray':b.open?'':'3 7'}));}
-  cells.forEach((cell,i)=>{const p=positions[i];svg.append(element('circle',{cx:p.x,cy:p.y,r:6+cell.light*90,fill:'#e5bb7b','fill-opacity':.2+Math.min(.8,cell.light*5)}));svg.append(element('text',{x:p.x,y:p.y+(p.y<250?-23:33),'text-anchor':'middle',fill:'#b8afa0','font-size':10,'font-family':'monospace'},cell.address));});
-  if(world.snake?.path.length>1)svg.append(element('polyline',{points:world.snake.path.map(i=>`${positions[i].x},${positions[i].y}`).join(' '),fill:'none',stroke:'#cbae91','stroke-width':2,'stroke-opacity':.7}));
-  if(!cells.length){svg.append(element('circle',{cx:130,cy:250,r:24,fill:'#e4c38c','fill-opacity':world.everything?.light??1}));svg.append(element('circle',{cx:470,cy:250,r:24,fill:'#e4c38c','fill-opacity':world.nothing?.light??0,stroke:'#e4c38c'}));for(const [x,text] of [[130,'EVERYTHING'],[470,'NOTHING']])svg.append(element('text',{x,y:305,'text-anchor':'middle',fill:'#b8afa0','font-size':11,'font-family':'monospace'},text));}
-  if(world.flame)svg.append(element('text',{x:300,y:258,'text-anchor':'middle',fill:'#f4d9a5','font-size':38,'font-family':'Georgia'},'V'));
-  else svg.append(element('circle',{cx:300,cy:250,r:14,fill:'none',stroke:'#726779','stroke-dasharray':'2 5'}));
-}
-function stop(){clearInterval(timer);timer=null;byId('auto').textContent='Play slowly';}
-function advance(){const frame=theatre.next();if(!frame){stop();return;}last=frame;committed.push(frame.number);byId('choice').disabled=true;byId('next').textContent='Next scene';byId('act').textContent=`Act ${frame.act} · ${frame.actTitle}`;byId('scene').textContent=frame.title;byId('direction').textContent=frame.direction;byId('motif').textContent=frame.motif;byId('dialogue').replaceChildren();for(const [speaker,line] of frame.lines){const p=document.createElement('p'),name=document.createElement('strong');name.textContent=speaker;p.append(name,document.createTextNode(line));byId('dialogue').append(p);}const entry=document.createElement('p');entry.textContent=`${frame.number}. ${frame.title}`;byId('history').append(entry);byId('state').textContent=JSON.stringify({action:frame.action,world:frame.world},null,2);byId('meter').textContent=frame.world.cells.length?`${frame.world.cells.length} places · ${frame.world.bonds.filter(b=>b.open).length} open bonds · ${frame.world.cells.reduce((s,c)=>s+c.light,0).toFixed(6)} light`:`${frame.world.song.length} remembered beats`;byId('save').disabled=false;draw(frame.world);if(frame.number===21){stop();byId('next').disabled=true;byId('auto').disabled=true;byId('next').textContent='The world remains';}}
-byId('next').onclick=advance;
-byId('auto').onclick=()=>{if(timer){stop();return;}advance();if(last?.number<21){timer=setInterval(advance,18000);byId('auto').textContent='Pause';}};
-byId('choice').onchange=()=>{if(!committed.length)theatre=openTheatre({invitation:byId('choice').value});};
-byId('new').onclick=()=>{stop();theatre=openTheatre({invitation:byId('choice').value});committed=[];last=null;byId('choice').disabled=false;byId('next').disabled=false;byId('auto').disabled=false;byId('save').disabled=true;byId('next').textContent='Raise the curtain';byId('act').textContent='Before the beginning';byId('scene').textContent='Neither of them enters.';byId('direction').textContent='A separate telling. Its history is not yet written.';byId('dialogue').replaceChildren();byId('history').replaceChildren();byId('state').textContent='No scene has been committed.';byId('motif').textContent='L | O | V | E';byId('meter').textContent='The distance is waiting.';draw({});};
-byId('save').onclick=()=>{const blob=new Blob([JSON.stringify(theatre.inspect(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`natural-intelligence-${byId('choice').value}-${committed.length}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-draw({});
-</script>
-</body>
-</html>
+<footer><p>Story roots: V / James Sterling Tuttle. New dialogue, living interface and computational score: ChatGPT.</p><p><a href="src/the-weaver.js">Read the living code</a> · <a href="vendor/ado_on/Ω.js">Original ado_on engine</a> · <a href="provenance/WEAVER.md">How the threads meet</a> · <a href="LICENSE">PolyForm Noncommercial</a> · <a href="NOTICE">Creative rights</a></p><p class="small">The trace stays. Meaning grows.</p></footer>
+</main><script type="module" src="stage.js"></script>
+</body></html>
