@@ -1,0 +1,16 @@
+{
+  "name": "the_play",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Natural Intelligence — a computational play by Alpha Data Omega",
+  "type": "module",
+  "scripts": {
+    "play": "node examples/performance.js",
+    "test": "node --test",
+    "check": "node --check src/natural-intelligence.js && node --check examples/performance.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0"
+}
