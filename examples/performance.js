@@ -1,45 +1,23 @@
-import { mkdirSync, writeFileSync } from "node:fs";
-import {
-  Null, Witness, performNaturalIntelligence, renderUniverseAsSvg
-} from "../src/natural-intelligence.js";
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { perform, asScript } from '../src/the-song.js';
 
-const characterNames = ["universe", "toe", "carbon", "snake", "null", "witness"];
-const record = [
-  "The universe knows by holding relations.",
-  "Carbon knows by bonding.",
-  "The snake knows by moving.",
-  "The toe knows by touching."
-];
-
-console.log("\nNATURAL INTELLIGENCE\n");
-console.log("ACT I — THE MAP");
-
-const state = performNaturalIntelligence({ characterNames, record });
-for (const contact of state.toeContacts) console.log(`TOE: ${contact.text}`);
-
-console.log("\nACT II — THE WALK");
-for (const bond of state.carbonBonds) {
-  console.log(`CARBON: ${bond.from} — ${bond.to} (distance ${bond.distance})`);
+const args = process.argv.slice(2);
+if (args.length > 1 || (args.length && !args[0].startsWith('--invitation='))) {
+  console.error('Usage: npm run play -- --invitation=accept|wait|decline');
+  process.exitCode = 1;
+} else {
+  try {
+    const invitation = args[0]?.slice('--invitation='.length) ?? 'accept';
+    const { frames, world } = perform({ invitation });
+    const script = asScript(frames);
+    console.log(script);
+    const directory = new URL('../art/generated/', import.meta.url);
+    mkdirSync(directory, { recursive: true });
+    writeFileSync(new URL('performance.md', directory), script);
+    writeFileSync(new URL('world.json', directory), JSON.stringify(world, null, 2) + '\n');
+    console.log('\nThe curtain falls. The world remains in art/generated/world.json.');
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  }
 }
-console.log(`SNAKE: ${state.snakePath.join(" -> ")}`);
-
-console.log("\nACT III — THE NULL");
-console.log("NULL:", Null.holdOpenChoice(0.51, 0.49));
-
-console.log("\nACT IV — THE RECORD");
-for (const phrase of [
-  "the toe knows by touching",
-  "touching by knows toe the",
-  "the moon is made of code"
-]) {
-  console.log(`WITNESS [${phrase}]:`, Witness.answerOnlyFromRecord(phrase, record));
-}
-
-console.log("\nACT V — NATURAL INTELLIGENCE");
-console.log("CHORUS: No character contains the intelligence.");
-console.log("CHORUS: It happened between them.\n");
-
-const dir = new URL("../art/generated/", import.meta.url);
-mkdirSync(dir, { recursive: true });
-writeFileSync(new URL("universe.svg", dir), renderUniverseAsSvg(state.universeMap, state.carbonBonds));
-console.log("ART: wrote art/generated/universe.svg");

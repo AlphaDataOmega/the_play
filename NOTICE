@@ -1,30 +1,23 @@
 Required Notice: Copyright 2026 Alpha Data Omega LLC (https://alphadataomega.com)
 
-ΑΔΩ is licensed under the PolyForm Noncommercial License 1.0.0 — see LICENSE.
-Noncommercial use is free. Commercial use requires a separate licence from
-Alpha Data Omega LLC.
+The software in this repository uses the PolyForm Noncommercial License 1.0.0.
+LICENSE is copied unchanged from AlphaDataOmega/ado_on.
 
+STORY AND ADAPTATION
 
-THE CORPUS IS NOT THE SOFTWARE
+The seven-part source story is by James Sterling Tuttle (V). Its source reference
+is recorded in provenance/SOURCES.md. The original story is not included here as
+a republished corpus. No rights in it are granted by the software license.
 
-PolyForm licenses software. It does not address the material in Δ/, and that
-distinction matters here.
+Natural Intelligence is a new dramatic adaptation and computational score made
+by ChatGPT at the author's express request. The dramatic dialogue, playbill and
+creative text are treated separately from the software. This notice does not
+grant third-party rights to reproduce, adapt, publicly perform, commercialize,
+or use the source story or dramatic text for training or benchmarking. Contact
+Alpha Data Omega LLC or the author for permissions. This notice makes no claim
+about whether or to what extent AI-generated portions are independently
+copyrightable. Local runtime instructions describe operation, not a separate
+license grant for protected creative material.
 
-Files under Δ/ are creative works. They are NOT licensed by LICENSE and no rights
-in them are granted by it.
-
-  Δ/V·001   A story written by James Sterling Tuttle. Reserved to its author. No
-            licence to reproduce, adapt, distribute, publicly perform, or use for
-            training, fine-tuning, evaluation or benchmarking is granted here.
-
-Corpora contributed by others remain the property of their authors under whatever
-terms those authors state in Δ/corpora.json. A contributor grants only what they
-state there, and a contribution that states nothing grants nothing.
-
-You may run this software on your own material without acquiring any rights in the
-corpora distributed with it, and reading a corpus grants no rights in the software.
-
-
-NAMES
-
-No rights are granted in the names ΑΔΩ, Alpha Data Omega, or Alpha Data Omega LLC.
+Names and marks remain with their respective holders. No rights in the names
+Alpha Data Omega, Alpha Data Omega LLC or ADO are granted by this notice.

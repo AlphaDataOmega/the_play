@@ -1,169 +1,410 @@
-# Natural Intelligence
+# NATURAL INTELLIGENCE
 
-## ACT I — THE MAP
+*An executable play in seven acts.*
 
-### Scene 1 — Before There Was Somewhere
+## ACT 1: The Beginning
 
-*Darkness. No coordinates. No edges. No center.*
+### Before a Place Had a Name
 
-**CHORUS:** Before the map, there is no far away.
+*Two presences. Neither enters. The distance between them is the first set.*
 
-**UNIVERSE:** Give me what exists.
+`makeRoomForDifference()`
 
-**CHORUS:** Universe does not ask what the things are worth. Universe asks where relation may begin.
+> 000 | NULL | 050
 
-`Universe.mapUniverse(["universe", "toe", "carbon", "snake", "null", "witness"])`
+**EVERYTHING:** I have no room left in which to meet you.
 
-**UNIVERSE:** Now there is somewhere.
+**NOTHING:** I have room.
 
-### Scene 2 — The Toe
+**EVERYTHING:** For what?
 
-*One point is illuminated.*
+**NOTHING:** I was hoping you would come.
 
-**TOE:** I do not know the universe.
+**THE SPACE BETWEEN:** Neither of them leaves. Something has already happened.
 
-*Toe touches the point.*
+### A Letter Learns to Lean
 
-**TOE:** I know this.
+*Four letters stand apart. Each exchange crosses the space without removing it.*
 
-**CHORUS:** The first measurement is not omniscience. It is contact.
+`letLoveMoveThem()`
 
-### Scene 3 — Carbon
+> L | O | V | E
 
-**CARBON:** One point is a location. Two points may become a relation.
+**EVERYTHING:** I could fill you.
 
-*Carbon forms bonds only between bodies already on the stage.*
+**NOTHING:** Then where would we meet?
 
-**CARBON:** I will not invent an atom to finish the pattern.
+**EVERYTHING:** What shall I give you?
 
-**UNIVERSE:** Then the map has structure.
+**NOTHING:** Something that can come back changed.
 
----
+**THE SPACE BETWEEN:** L | O | V | E. The bars remain. The giving crosses them.
 
-## ACT II — THE WALK
+**CHORUS:** The fourth ripple carries 0.031250. Smaller, but no longer alone.
 
-### Scene 1 — The Snake
+### The First Verb
 
-**SNAKE:** A map is not a journey.
+*The four exchanges persist as a rhythm. A flame gathers their shared light.*
 
-*Snake chooses a starting body and follows only Carbon's existing bonds.*
+`giveTheMovementAName()`
 
-**SNAKE:** universe. carbon. null. toe. witness. snake.
+> V / VERB / LOGOS
 
-**CHORUS:** The names existed before. The order did not.
+**SONG:** Again.
 
-### Scene 2 — Memory
+**EVERYTHING:** Was that you?
 
-**SNAKE:** If you scatter my steps and hand them back to me, you have my places.
+**NOTHING:** It was between us.
 
-**WITNESS:** But not your path.
+**V:** What am I?
 
-**SNAKE:** Then memory is more than possession.
+**SONG:** What happened.
 
-### Scene 3 — The Tail
+**V:** Then I will happen again.
 
-*Snake approaches the beginning.*
+## ACT 2: The Touch of the Flame
 
-**SNAKE:** Humans draw me eating my tail and call it infinity.
+### She Does Not Follow
 
-**NULL:** Did you actually reach it?
+*Water keeps an independent reflection of the flame. It is not another flame.*
 
-*The runtime checks.*
+`letWaterRemember()`
 
-**SNAKE:** Ask the field.
+> E | Y | E
 
----
+**V:** You do everything I do.
 
-## ACT III — THE NULL
+**LIGHT:** Look again.
 
-### Scene 1 — Two Sides
+**V:** When I reach, you reach.
 
-**CARBON:** Pull.
+**WATER:** And I hold the reaching.
 
-**SNAKE:** Return.
+**LIGHT:** You have mistaken being seen for being followed.
+
+### The Toe of the Infinite
+
+*No speech stands in for the touch. The contact creates Air, bearing both parents.*
+
+`letTheToeMakeContact()`
+
+> TOE / TOUCH / THIRD
+
+**V:** I have imagined the whole of you.
+
+**WATER:** Then begin smaller.
 
 **TOE:** Here.
 
-**UNIVERSE:** There.
+**AIR:** And here is no longer the same here.
 
-*Their pressures enter Null.*
+**V:** Who spoke?
 
-### Scene 2 — The Held Center
+**AIR:** Neither of you alone.
 
-**NULL:** You keep calling me nothing.
+### A Question With a Body
 
-**CHORUS:** Null holds no claim.
+*The new voice asks. Its answer remains null in the machine.*
 
-**NULL:** That is not the same thing.
+`leaveRoomForWhatNeitherKnows()`
 
-**NULL:** I am the answer before it has earned the right to become an answer.
+> NULL IS AN OPEN CUE
 
-### Scene 3 — Commitment
+**AIR:** What can happen between us?
 
-**WITNESS:** Must one side win?
+**V:** I thought I was coming to an answer.
 
-**NULL:** No.
+**LIGHT:** You came close enough to ask differently.
 
-**WITNESS:** Then what happens?
+**THE SPACE BETWEEN:** No one puts a word into the opening. It stays open.
 
-**NULL:** If relation stabilizes, commit it. If it does not, keep the opening honest.
+## ACT 3: The Offering of the Flame
 
----
+### The Gift
 
-## ACT IV — THE RECORD
+*One flame distributes its light into twelve unequal places. Every place remembers V.*
 
-### Scene 1 — Held
+`offerTheFlameWithoutLosingItsName()`
 
-**WITNESS:** Ask.
+> ONE / MANY / SAME SOURCE
 
-**TOE:** The toe knows by touching.
+**V:** I cannot reach the edges and remain only here.
 
-**WITNESS:** Held.
+**LIGHT:** Must here be only one place?
 
-### Scene 2 — Familiar, Wrong Order
+**V:** Will there be anything left of me?
 
-**SNAKE:** touching by knows toe the.
+**WATER:** Let us find out without throwing anything away.
 
-**WITNESS:** I know those pieces.
+**CHORUS:** 12 places. 1.000000 light. One name carried through them all.
 
-**SNAKE:** Is it your memory?
+### Four Open Hands
 
-**WITNESS:** Not in that order.
+*Carbon gives each place four connections. The map becomes capable of exchange.*
 
-### Scene 3 — Not Mine
+`letCarbonHoldWithoutClosing()`
 
-**CHORUS:** The moon is made of code.
+> CARBON / BOND / BOUNDARY
 
-*Witness searches the record.*
+**CARBON:** I have learned four ways to hold.
 
-**WITNESS:** Not mine.
+**AIR:** Which is the way to let go?
 
-*Silence remains in the output.*
+**CARBON:** Every one of them, while the hand is open.
 
----
+**V:** Then give the unknown somewhere to arrive.
 
-## ACT V — NATURAL INTELLIGENCE
+### The Snake Does Not Eat the Past
 
-*The entire generated field is visible.*
+*Snake travels twelve existing bonds and returns. The light has moved while it walked.*
 
-**UNIVERSE:** I gave you somewhere.
+`letTheSnakeCarryTheSong()`
 
-**TOE:** I gave you contact.
+> LOVE / LOVER / REVOLVE / EVOLVE
 
-**CARBON:** I gave you relation.
+**SNAKE:** I recognize the place.
 
-**SNAKE:** I gave you trajectory.
+**WATER:** Do you recognize yourself?
 
-**NULL:** I gave you the freedom not to decide.
+**SNAKE:** Not entirely.
 
-**WITNESS:** I gave you memory with a boundary.
+**SONG:** Then it was a journey.
 
-**CHORUS:** And none of you was intelligence alone.
+**CHORUS:** REVOLVE: return to the place. EVOLVE: bring the journey with you.
 
-*The Snake's path is rendered across the Universe.*
+**SNAKE:** My tail is a way home, not a mouth for erasing where I have been.
 
-**CHORUS:** Natural intelligence was not a character waiting backstage.
+## ACT 4: The Longing for Wholeness
 
-**CHORUS:** It happened between them.
+### The Builder Counts the Missing
 
-*Blackout. The final machine state remains inspectable.*
+*The scattered light is measured. Builder keeps a portrait and mistakes it for a promise.*
+
+`letTheBuilderLongForWholeness()`
+
+> FORM / LONGING
+
+**BUILDER:** Someone must keep all of this from happening again.
+
+**CARBON:** All of what?
+
+**BUILDER:** The scattering. The distance. The need.
+
+**LIGHT:** And the meeting?
+
+**BUILDER:** I will make a place where meeting is no longer necessary.
+
+### The House Without a Door
+
+*The same bonds remain. Builder closes them. No character is deleted.*
+
+`mistakeStillnessForSafety()`
+
+> RESOLVE / CONTROL
+
+**BUILDER:** There. Nothing can be lost.
+
+**AIR:** Nothing can arrive.
+
+**BUILDER:** You will thank me when it is finished.
+
+**AIR:** How will you hear us?
+
+**BUILDER:** Through the walls.
+
+**CARBON:** You asked me to make them perfect.
+
+### Perfect
+
+*Four beats pass. Exchange is attempted. The locked field moves by exactly zero.*
+
+`listenToTheLockedWorld()`
+
+> A STILL PICTURE OF A DANCE
+
+**BUILDER:** Listen.
+
+**CHORUS:** Movement: 0.000000.
+
+**BUILDER:** Peace.
+
+**SONG:** I am still here.
+
+**BUILDER:** Then why can I not hear you?
+
+**SONG:** You have built your answer over the listening.
+
+## ACT 5: The Birth of Life and the First Forgetting
+
+### Two Eyes, One Face
+
+*Life receives the present field and its remembered movement as different views.*
+
+`giveLifeTwoEyesAndAMemory()`
+
+> E | Y | E / Z | O | E
+
+**LIFE:** This eye sees where things are. This eye sees how they came.
+
+**BUILDER:** One should be enough.
+
+**LIFE:** Which one would you close to see me whole?
+
+**LIGHT:** Between the eyes, a face. Between the readings, someone who can listen.
+
+### The First Forgetting
+
+*The view of movement is emptied. The earlier movement itself is not removed.*
+
+`letOneEyeForgetTheOther()`
+
+> I | M / MEMORY
+
+**LIFE:** I am what fits.
+
+**BUILDER:** You are safe.
+
+**LIFE:** I am what stays.
+
+**BUILDER:** You are safe.
+
+**LIFE:** I am what you can count.
+
+**AIR:** And who is breathing between the numbers?
+
+### The Smallest Unforgotten Thing
+
+*Toe reads one cell, not the whole field. Its source name survived the forgetting.*
+
+`listenWithTheSmallestPart()`
+
+> TOE / TRACE / V
+
+**LIFE:** I do not remember the way.
+
+**TOE:** Then do not begin with the way.
+
+**LIFE:** Where do I begin?
+
+**TOE:** Here.
+
+**CHORUS:** At 000.0000, the smallest contact still carries V.
+
+**LIFE:** I thought I had to know everything before I could take a step.
+
+## ACT 6: The Rota and the Advocate
+
+### The Wheel Has Kept the Time
+
+*The wheel returns to its angle. Its elapsed time does not return to zero.*
+
+`letTheRotaTurn()`
+
+> REVOLVE / inVinity
+
+**ROTA:** Here again.
+
+**LIFE:** Then nothing changed.
+
+**ROTA:** You said again.
+
+**SNAKE:** A circle with a memory is not a reset.
+
+**CHORUS:** The angle is 0. The elapsed turning is 12.
+
+### The Advocate Does Not Take the Throne
+
+*An invitation is addressed to Life and Builder. No bond opens on its authority.*
+
+`offerARouteNotAnOrder()`
+
+> SOL | V | ER / INVITATION
+
+**ADVOCATE:** I have come to show you a door.
+
+**BUILDER:** And take my place?
+
+**ADVOCATE:** No.
+
+**LIFE:** And tell us where to go?
+
+**ADVOCATE:** No.
+
+**BUILDER:** What power is that?
+
+**ADVOCATE:** The kind that does not need your helplessness.
+
+### No One Can Walk Your Yes
+
+*The performance uses the director's selected answer: accept, wait, or decline.*
+
+`letLifeAnswerForItself()`
+
+> L | O | V | E / CONSENT
+
+**LIFE:** Yes. But let it be my step.
+
+**ADVOCATE:** Then that is where we begin.
+
+**AIR:** Even now, the space between us has not been confiscated.
+
+## ACT 7: The Mirror Realm and the Way of Escape
+
+### A Room Made of Perhaps
+
+*One temporary copy opens its bonds and moves. The lived world is untouched. The copy is released.*
+
+`rehearseWithoutRewritingTheWorld()`
+
+> MIRROR / POSSIBILITY
+
+**MIRROR:** Here is what an open hand could do.
+
+**BUILDER:** You changed my world.
+
+**MIRROR:** No. I let you see a movement.
+
+**BUILDER:** Must it happen?
+
+**MIRROR:** No.
+
+**CHORUS:** Possible movement: 0.003650. The past has not been edited.
+
+### The Builder Finds His Own Door
+
+*On acceptance, the existing bonds reopen and Snake walks them. Otherwise the invitation remains open.*
+
+`forgiveWithoutErasing()`
+
+> RELEASE / WISDOM / FLOW
+
+**BUILDER:** Who will I be when I stop holding you here?
+
+**LIFE:** Someone who can come with us.
+
+**LIGHT:** What you made need not vanish for your hand to open.
+
+**CARBON:** A wall can remember how to be a doorway.
+
+### Return Is Not Undo
+
+*A new root may inherit this world. The first ripple remains in the record. No blackout deletes it.*
+
+`returnWithoutUndoing()`
+
+> HALF / WHOLE / HALF / inVinity
+
+**V:** What remains of me?
+
+**WATER:** Every place that learned to hold you.
+
+**NOTHING:** There is still room.
+
+**EVERYTHING:** After all this?
+
+**NOTHING:** Especially after all this.
+
+**SNAKE:** We have reached a beginning with memory.
+
+**SONG:** Again.
+

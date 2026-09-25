@@ -1,0 +1,4 @@
+art/generated/
+node_modules/
+*.log
+.DS_Store
