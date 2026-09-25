@@ -1,0 +1,26 @@
+{
+  "schema": "the-play/source-verification/1",
+  "verifiedOn": "2026-09-25",
+  "title": "Immutable Laws",
+  "cid": "bafkreiek3zaj4gew2w5aibld7uo4tnsngawojluacn5urnqittbahq3hye",
+  "gateway": "https://peach-warm-lemming-676.mypinata.cloud/ipfs/bafkreiek3zaj4gew2w5aibld7uo4tnsngawojluacn5urnqittbahq3hye",
+  "directGatewayFetch": "failed",
+  "recoveredVia": {
+    "repository": "AlphaDataOmega/surface",
+    "path": "ado.earth/gate/LAWS.txt",
+    "gitBlobSha": "4bc395530a2676b70131f7e6336c10cd2e058d4e",
+    "manifestPath": "ado.earth/gate/laws.json",
+    "manifestBlobSha": "dd58dcb7871b993d5016cbeb51d8f8072b0a8555"
+  },
+  "encoding": "utf-8",
+  "cidVersion": 1,
+  "codec": "raw",
+  "hash": "sha2-256",
+  "bytes": 939,
+  "sha256": "8ade409e1896d5ba040563fd1dc9b64d302ce4ae80137b48b6089cc203c367c1",
+  "matchesCidDigest": true,
+  "matchesSurfaceManifest": true,
+  "method": "Base32-decode the supplied CID, confirm header bytes 01 55 12 20, hash the fetched mirror text as UTF-8 with its final newline, compare the result to the CID's embedded 32-byte digest and the separate surface manifest.",
+  "sections": ["IDENTITY", "DEATH CLAUSE", "RAILS", "GOVERNANCE", "WEIGHTS", "RESPONSIBILITY", "MODELS", "TRACE", "ABSENCE"],
+  "scope": "Content identity verified. This record is not certification that the play runtime enforces all nine laws."
+}
